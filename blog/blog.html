@@ -1,0 +1,105 @@
+<!DOCTYPE
+ html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href=" ../assets/css/main2.css">
+    <title>Blog</title>
+</head>
+
+<body>
+  <ul class="background">
+    <li></li>
+    <li>BLOG</li>
+    <li>BLOG</li>
+    <li>BLOG</li>
+    <li></li>
+    <li></li>
+    <li>BLOG</li>
+    <li>BLOG</li>
+    <li>BLOG</li>
+    <li></li>
+  </ul>
+
+  <header id="header">
+    <div class="logo" id="logo">
+      <img src="../assets/img/logo.webp" alt="logo" class="logo_web">
+      HEAVEN's BLIND
+    </div>
+</header>
+
+
+<div class="container">
+<!-- <a id="newPostBtn" href="#"><button onclick="showForm('newPostForm')" >New Post</button></a> -->
+
+<button id="newPostBtn" onclick="openModal('newPostForm')">New Post</button> 
+<ul id="postsList">
+    <li>
+      <h2 id = "title"> </h2>
+      <small id="date" >
+      </small>
+      <p id ="content"></p>
+      <small id="auther"></small>
+      <a class="edit" href="#" onclick="openModal('editForm')">Edit</a>
+      <a class="delete" href="#">Delete</a>
+    </li>
+
+    <li>
+      <h2>
+        ABCD
+      </h2>
+      <small>
+        12/08/2024
+      </small>
+      <p>
+        The American Broadcasting Company (ABC) is an American commercial broadcast television and radio network that serves as the flagship property of the Disney Entertainment division of the Walt Disney Company. ABC is headquartered on Riverside Drive in Burbank, California, directly across the street from Walt Disney Studios and adjacent to the Team Disney - Roy E. Disney Animation Building. The network maintains secondary offices at 77 West 66th Street on the Upper West Side of Manhattan, New York City, which houses its broadcast center and the headquarters of its news division, ABC News.
+      </p>
+      <small>By: Anonymous USER </small>
+      <button class="edit" onclick="openModal('editForm')">Edit</button>
+      <a class="delete" href="#">Delete</a>
+    </li>
+
+    <li>
+      <h2>
+        ABCD
+      </h2>
+      <small>
+        12/08/2024
+      </small>
+      <p>
+        The American Broadcasting Company (ABC) is an American commercial broadcast television and radio network that serves as the flagship property of the Disney Entertainment division of the Walt Disney Company. ABC is headquartered on Riverside Drive in Burbank, California, directly across the street from Walt Disney Studios and adjacent to the Team Disney - Roy E. Disney Animation Building. The network maintains secondary offices at 77 West 66th Street on the Upper West Side of Manhattan, New York City, which houses its broadcast center and the headquarters of its news division, ABC News.
+      </p>
+      <small>By: Anonymous USER </small>
+      <button class="edit" onclick="openModal('editForm')">Edit</button>
+      <a class="delete" href="#">Delete</a>
+    </li>
+</ul>
+</div>
+
+  <!-- Modal for forms -->
+  <div id="formModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div id="formContainer"></div>
+      </div>
+  </div>
+  
+<footer class="footer" id="footer">
+<div class="footer-content">
+<p>Follow us on:
+  <a href="https://twitter.com/yourcompany" target="_blank">Twitter</a> |
+  <a href="https://facebook.com/yourcompany" target="_blank">Facebook</a> |
+  <a href="https://instagram.com/yourcompany" target="_blank">Instagram</a>
+</p>
+<p>Contact us: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+<p>&copy; 2024 Your Company. All rights reserved.</p>
+</div>
+<!-- <a href="/logout" role="button"><i class="fi fi-br-power" style="color: red; font-size: larger;"></i></a> -->
+</footer>
+
+<script src="../as.js"></script>
+
+</body>
+</html>
